@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sagar Gyawali | Portfolio</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
   <script src="js/bootstrap.bundle.min.js"></script>
   <style>
     body {
       padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
     }
     .profile-img {
-      max-width: 200px;
+      max-width: 180px;
       border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    header.hero {
+      background: linear-gradient(145deg, #e9ecef, #ffffff);
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .section-title {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .project-list li {
+      background-color: #f8f9fa;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-left: 4px solid #0d6efd;
+      border-radius: 5px;
+      list-style: none;
+    }
+    footer {
+      background-color: #212529;
+      color: #fff;
+    }
+    a {
+      color: #0d6efd;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">Sagar Gyawali</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,30 +67,32 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-light text-center py-5">
+  <header class="hero">
     <div class="container">
-      <img src="IMG_0388.jpg" alt="Sagar Gyawali" class="profile-img mb-3">
-      <h1 class="display-4">Hello, I'm Sagar Gyawali</h1>
-      <p class="lead">Aspiring Software Developer | Problem Solver | Fitness Enthusiast</p>
+      <img src="IMG_0388.jpg" alt="Sagar Gyawali" class="profile-img mb-4" />
+      <h1 class="display-5 fw-bold">Hey, I'm Sagar Gyawali</h1>
+      <p class="lead">Software Developer • Innovator • Fitness Enthusiast</p>
     </div>
   </header>
 
   <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I am a senior Computer Science student passionate about software development and innovation. I love building real-world applications, solving problems, and exploring new technologies. After graduation, I plan to work as a developer and eventually launch my own startups.</p>
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a senior Computer Science student passionate about solving real-world problems with code. Whether it's building apps or launching new ideas, I'm driven by curiosity and creativity. My goal is to start my own tech companies in the near future.
+      </p>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="bg-light py-5">
     <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Baby Tracker App</strong> – A mobile app for tracking baby health and activity logs.</li>
-        <li><strong>Fitness Web App</strong> – Personal workout tracker with a clean UI and progress analytics.</li>
-        <li><strong>Digit Classifier</strong> – Implemented k-NN and Naive Bayes models for handwritten digit recognition.</li>
+      <h2 class="section-title">Projects</h2>
+      <ul class="project-list p-0">
+        <li><strong>👶 Baby Tracker App:</strong> Mobile app for tracking baby health and logs</li>
+        <li><strong>💪 Fitness Web App:</strong> Track workouts, analyze progress, and set goals</li>
+        <li><strong>🧠 Digit Classifier:</strong> Machine learning model for handwritten digit recognition</li>
       </ul>
     </div>
   </section>
@@ -67,17 +100,17 @@
   <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sagargyawali@email.com">sagargyawali@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/sagargyawali" target="_blank">github.com/sagargyawali</a></p>
-      <p>Instagram: <a href="https://instagram.com/bikram.sag" target="_blank">@yourusername</a></p>
+      <h2 class="section-title">Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:sagargyawali@email.com">sagargyawali@email.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sagargyawali" target="_blank">github.com/sagargyawali</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/bikram.sag" target="_blank">@bikram.sag</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="text-center py-4">
     <div class="container">
-      &copy; 2025 Sagar Gyawali. All rights reserved.
+      &copy; 2025 Sagar Gyawali • Built with ❤️ and Bootstrap
     </div>
   </footer>
 
